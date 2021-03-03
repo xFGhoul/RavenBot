@@ -10,9 +10,9 @@
   <h3 align="center">Raven Bot</h3>
 
   <p align="center">
-    <a href="https://github.com/xFGhoul/RavenBot/issues">Report Bug</a>
+    <a href="https://github.com/xFGhoul/RavenBot/issues/new">Report Bug</a>
     ·
-    <a href="https://github.com/xFGhoul/RavenBot/issues">Request Feature</a>
+    <a href="https://github.com/xFGhoul/RavenBot/issues/new">Request Feature</a>
   </p>
 </p>
 
