@@ -1,0 +1,35 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[[source]]
+url = "https://gorialis.github.io/pip/"
+verify_ssl = false
+name = "windows"
+
+[dev-packages]
+pylint = "*"
+autopep8 = "*"
+
+[packages]
+"discord.py" = "*"
+PyYAML = "*"
+asyncpraw = "*"
+aiofiles = "*"
+Pillow = "*"
+"tortoise-orm[asyncpg]" = "*"
+aiohttp = "*"
+DiscordUtils = "*"
+watchgod = "*"
+requests = "*"
+async-timeout = "*"
+sympy = "*"
+py = "*"
+jishaku = {ref = "master", git = "https://github.com/Gorialis/jishaku"}
+rich = "*"
+aerich = "==0.3.3"
+
+
+[requires]
+python_version = "3.9"

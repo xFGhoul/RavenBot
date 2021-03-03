@@ -1,0 +1,9 @@
+
+.mypy_cache/
+.vscode/
+migrations/ravenbot/*
+aerich.ini
+*.pyc
+*.pickle
+__pycache__
+Pipfile.lock
