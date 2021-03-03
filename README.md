@@ -42,7 +42,7 @@ This is Simply a discord bot with various features for a private discord server.
 ### Prerequisites
 
 * [Python](http://python.org/download/) (3.9+)
-* pipenv
+* [pipenv](https://pypi.org/project/pipenv/)
 
 ### Installation
 Once all the Prerequisites are installed and Running, Follow these steps:
@@ -58,12 +58,17 @@ Once all the Prerequisites are installed and Running, Follow these steps:
    pipenv install
   ```
   
-3. Setting up the config file:
+3. Run:
+  ```sh
+  pipenv shell
+  ```
+ 
+4. Setting up the config file:
 
     - example.config.yaml
        - Create `config.yaml` manually and Inputting the correct info from [example.config.yaml](https://github.com/xFGhoul/RavenBot/blob/master/config/example.config.yaml)
        
- 4. Setting Up the Database:
+ 5. Setting Up the Database:
   ```sh
     aerich init -t db.tortoise_config.tortoise.TORTOISE_CONFIG
     aerich init-db
@@ -75,7 +80,7 @@ Once all the Prerequisites are installed and Running, Follow these steps:
  location = migrations
  ```
   
-  5. Run:
+  6. Run:
   ```sh
     python main.py
   ```
