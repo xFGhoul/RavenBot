@@ -80,4 +80,4 @@ Once all the Prerequisites are installed and Running, Follow these steps:
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/xFGhoul/BotPresenceLauncher/blob/master/LICENSE) for more information
+Distributed under the MIT License. See [LICENSE](https://github.com/xFGhoul/RavenBot/blob/master/LICENSE) for more information
