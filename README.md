@@ -7,7 +7,7 @@
     <img src="https://cdn.discordapp.com/avatars/742519951675490365/5aa1b6f79c05664ad1e6281b0400dacb.png" alt="Logo">
   </a>
 
-  <h3 align="center">Raven Bootr</h3>
+  <h3 align="center">Raven Bot</h3>
 
   <p align="center">
     <a href="https://github.com/xFGhoul/RavenBot/issues">Report Bug</a>
