@@ -63,7 +63,19 @@ Once all the Prerequisites are installed and Running, Follow these steps:
     - example.config.yaml
        - Create `config.yaml` manually and Inputting the correct info from [example.config.yaml](https://github.com/xFGhoul/RavenBot/blob/master/config/example.config.yaml)
        
- 4. Run:
+ 4. Setting Up the Database:
+  ```sh
+    aerich init -t db.tortoise_config.tortoise.TORTOISE_CONFIG
+    aerich init-db
+  ```
+  - Note: If you are getting issues on windows make sure your `aerich.ini` file looks like:
+  ```ini
+ [aerich]
+ tortoise_orm = db.tortoise_config.tortoise.TORTOISE_CONFIG
+ location = migrations
+ ```
+  
+  5. Run:
   ```sh
     python main.py
   ```
