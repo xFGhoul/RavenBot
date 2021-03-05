@@ -26,7 +26,6 @@ requests = "*"
 async-timeout = "*"
 sympy = "*"
 py = "*"
-jishaku = {ref = "master", git = "https://github.com/Gorialis/jishaku"}
 rich = "*"
 aerich = "==0.3.3"
 
