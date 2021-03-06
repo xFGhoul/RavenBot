@@ -6,4 +6,4 @@ aerich.ini
 *.pyc
 *.pickle
 __pycache__
-Pipfile.lock
+
