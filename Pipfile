@@ -25,9 +25,10 @@ sympy = "*"
 py = "*"
 rich = "*"
 aerich = "*"
+jishaku = "*"
 
 [requires]
 python_version = "3.9"
 
-[packages.pydantic]
-extras = [ "dotenv",]
+[packages]
+pydantic = {extras = [ "dotenv",]}
