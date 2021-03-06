@@ -148,7 +148,7 @@ class RavenBot(commands.Bot):
 
     def launch(self) -> None:
         self.run(bot_config.bot_token, reconnect=True, bot=True)
-
+        
     @tasks.loop(seconds=10)
     async def status(self):
         """Cycles through all status every 10 seconds"""
