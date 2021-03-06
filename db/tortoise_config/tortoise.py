@@ -1,7 +1,7 @@
-from config.loader.configloader import config
+from config.bot import bot_config
 
 TORTOISE_CONFIG = {
-    "connections": {"default": config['DATABASE_URI']},
+    "connections": {"default": bot_config.database_url},
     "apps": {
         "ravenbot": {
             "models": ["models", "aerich.models"],

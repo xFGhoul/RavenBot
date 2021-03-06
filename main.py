@@ -29,7 +29,7 @@ from rich.traceback import install
 
 from utils.rich import console
 from models import Guild
-from config.loader.configloader import config
+from config.bot import bot_config
 from db.tortoise_config.tortoise import TORTOISE_CONFIG
 
 
@@ -147,7 +147,7 @@ class RavenBot(commands.Bot):
         return result
 
     def launch(self) -> None:
-        self.run(config['DISCORD_TOKEN'], reconnect=True, bot=True)
+        self.run(bot_config.bot_token, reconnect=True, bot=True)
 
     @tasks.loop(seconds=10)
     async def status(self):

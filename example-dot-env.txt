@@ -1,0 +1,4 @@
+# Brackets are just for indication and aren't needed!
+
+BOT_TOKEN=[Bot Token]
+DATABASE_URL=[Postgres Db URI]
