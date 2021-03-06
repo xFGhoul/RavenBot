@@ -6,4 +6,5 @@ aerich.ini
 *.pyc
 *.pickle
 __pycache__
+.env
 

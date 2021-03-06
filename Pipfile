@@ -24,8 +24,10 @@ async-timeout = "*"
 sympy = "*"
 py = "*"
 rich = "*"
-aerich = "==0.3.3"
-
+aerich = "*"
 
 [requires]
 python_version = "3.9"
+
+[packages.pydantic]
+extras = [ "dotenv",]
