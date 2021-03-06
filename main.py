@@ -147,7 +147,8 @@ class RavenBot(commands.Bot):
         return result
 
     def launch(self) -> None:
-        self.run(config['DISCORD_TOKEN'], reconnect=True, bot=True)
+        TOKEN = os.getenv("DISCORD_TOKEN")
+        self.run(TOKEN, reconnect=True, bot=True)
 
     @tasks.loop(seconds=10)
     async def status(self):
