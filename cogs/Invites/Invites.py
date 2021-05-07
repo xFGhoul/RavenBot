@@ -21,7 +21,6 @@ class InviteTracker(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.tracker = DiscordUtils.InviteTracker(bot)
-        self.send_leaderboard.start()
 
     @commands.Cog.listener()
     async def on_ready(self):
@@ -124,31 +123,6 @@ class InviteTracker(commands.Cog):
         for invite in invite_lb:
             embed.add_field(name=ctx.guild.get_member(invite.inviter_id), value=f"Invites: `{invite.invite_count}`", inline=False)
         await ctx.send(embed=embed)
-
-    @tasks.loop(seconds=3600)
-    async def send_leaderboard(self):
-        db_guild = await Guild.get_or_none(discord_id=709325285518213150)
-        invite_lb = await Invites.filter(guild=db_guild).order_by('-invite_count').limit(25).all()
-        guild = self.bot.get_guild(709325285518213150)
-        inv_channel = self.bot.get_channel(816479943751761920)
-        message = await inv_channel.fetch_message(816506295679057941)
-        
-        
-        embed = discord.Embed(
-            title="Top Inviters",
-            color=discord.Color.blue(),
-            timestamp=datetime.utcnow()
-        )
-        for invite in invite_lb:
-            embed.add_field(name=guild.get_member(invite.inviter_id), value=f"Invites: `{invite.invite_count}`", inline=False)
-        await message.edit(embed=embed)
-        log.info("Upgraded LB")
-
-
-    @send_leaderboard.before_loop
-    async def before_printer(self):
-        print('Loading Invite LB...')
-        await self.bot.wait_until_ready()
 
 def setup(bot):
     cog = InviteTracker(bot)

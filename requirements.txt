@@ -1,0 +1,12 @@
+discord.py
+PyYAML
+tortoise-orm[asyncpg]
+aiohttp
+DiscordUtils
+watchgod
+requests
+async-timeout
+sympy
+rich
+aerich
+jishaku
